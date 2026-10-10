@@ -330,15 +330,15 @@ export default function CustomizePage() {
   };
 
   return (
-    <section className="section" style={{ padding: '3rem 0 6rem' }}>
+    <section className="section" style={{ padding: '1.5rem 0 3.5rem' }}>
       <div className="container">
         {/* Header Bar */}
-        <div className="section-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+        <div className="section-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
           <div>
             <span className="eyebrow">CUSTOM STUDIO EDITOR</span>
-            <h1 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontFamily: "'Bodoni Moda', serif" }}>Design Your Statement Tee</h1>
+            <h1 style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', fontFamily: "'Bodoni Moda', serif" }}>Design Your Statement Tee</h1>
           </div>
-          <div style={{ display: 'flex', gap: '0.75rem' }}>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
             <button className="btn btn-outline" onClick={handleUndo} disabled={historyIndex <= 0} title="Undo">
               <Undo size={16} />
             </button>
@@ -352,44 +352,44 @@ export default function CustomizePage() {
         </div>
 
         {savedMessage && (
-          <div className="success" style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div className="success" style={{ marginBottom: '1.25rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span>{savedMessage}</span>
             <button onClick={() => setSavedMessage('')} style={{ background: 'none', border: 'none', cursor: 'pointer', fontWeight: 700 }}>✕</button>
           </div>
         )}
 
-        {/* 2-Column Responsive Layout: Left 65% Interactive T-Shirt Preview | Right 35% Customization Panel */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.6fr) minmax(0, 1fr)', gap: '2.5rem', alignItems: 'start' }}>
+        {/* 2-Column Responsive Layout: Left Interactive T-Shirt Preview | Right Customization Panel */}
+        <div className="customizer-shell">
           
           {/* LEFT SIDE: T-Shirt Mockup & Interactive Print Area */}
-          <div className="card" style={{ padding: '2rem 1.5rem', backgroundColor: '#F8FAFC', position: 'relative', minHeight: '620px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <div className="card" style={{ padding: '1.25rem 1rem', backgroundColor: '#F8FAFC', position: 'relative', minHeight: '480px', maxHeight: '540px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             
             {/* View Switcher Overlay Tabs */}
-            <div style={{ position: 'absolute', top: '1.25rem', left: '1.25rem', zIndex: 10, display: 'flex', gap: '0.5rem', background: '#FFFFFF', padding: '0.35rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}>
+            <div style={{ position: 'absolute', top: '1rem', left: '1rem', zIndex: 10, display: 'flex', gap: '0.4rem', background: '#FFFFFF', padding: '0.25rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}>
               <button
                 className={`btn ${viewSide === 'front' ? 'btn-primary' : 'btn-outline'}`}
                 onClick={() => setViewSide('front')}
-                style={{ padding: '0.4rem 1rem', fontSize: '0.8rem' }}
+                style={{ padding: '0.35rem 0.85rem', fontSize: '0.75rem' }}
               >
                 Front View
               </button>
               <button
                 className={`btn ${viewSide === 'back' ? 'btn-primary' : 'btn-outline'}`}
                 onClick={() => setViewSide('back')}
-                style={{ padding: '0.4rem 1rem', fontSize: '0.8rem' }}
+                style={{ padding: '0.35rem 0.85rem', fontSize: '0.75rem' }}
               >
                 Back View
               </button>
             </div>
 
             {/* Quick Garment Color Indicator Tag */}
-            <div style={{ position: 'absolute', top: '1.25rem', right: '1.25rem', zIndex: 10, background: '#FFFFFF', padding: '0.4rem 0.85rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)', fontSize: '0.8rem', fontWeight: 600 }}>
+            <div style={{ position: 'absolute', top: '1rem', right: '1rem', zIndex: 10, background: '#FFFFFF', padding: '0.3rem 0.75rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)', fontSize: '0.75rem', fontWeight: 600 }}>
               Color: {selectedColorObj.label}
             </div>
 
             {/* REALISTIC T-SHIRT VECTOR MOCKUP CONTAINER */}
             <div 
-              style={{ position: 'relative', width: '100%', maxWidth: '480px', aspectRatio: '1/1.15', display: 'flex', alignItems: 'center', justifyContent: 'center', userSelect: 'none' }}
+              style={{ position: 'relative', width: '100%', maxWidth: '380px', maxHeight: '420px', aspectRatio: '1/1.12', display: 'flex', alignItems: 'center', justifyContent: 'center', userSelect: 'none' }}
               onClick={() => setSelectedId(null)}
             >
               {/* Garment SVG Body Mockup */}
@@ -558,13 +558,13 @@ export default function CustomizePage() {
             </div>
 
             {/* Direct Interaction Instruction */}
-            <p style={{ marginTop: '1.5rem', fontSize: '0.85rem', color: 'var(--text-muted)', textAlign: 'center' }}>
+            <p style={{ marginTop: '0.85rem', fontSize: '0.8rem', color: 'var(--text-muted)', textAlign: 'center' }}>
               💡 <strong>Direct Manipulation:</strong> Click any element directly on the T-shirt to drag, scale (corner handle), or rotate (top handle).
             </p>
           </div>
 
           {/* RIGHT SIDE: CUSTOMIZATION TOOLBAR & OPTIONS PANEL */}
-          <div className="card" style={{ padding: '2rem 1.75rem', display: 'flex', flexDirection: 'column', gap: '1.75rem' }}>
+          <div className="card" style={{ padding: '1.25rem 1.25rem', display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
             
             {/* 1. PRIMARY TOOLBAR */}
             <div>

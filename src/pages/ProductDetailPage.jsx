@@ -48,17 +48,17 @@ export default function ProductDetailPage() {
           <ArrowLeft size={16} /> Back to Shop
         </Link>
 
-        <div className="grid-2" style={{ gap: '4rem', alignItems: 'start' }}>
+        <div className="grid-2" style={{ gap: '2.5rem', alignItems: 'start' }}>
           {/* Visual Column */}
-          <div style={{ position: 'sticky', top: '100px' }}>
+          <div style={{ position: 'sticky', top: '80px' }}>
             <div className="card" style={{ padding: '1rem', backgroundColor: 'var(--bg-soft)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img 
                 src={product.image} 
                 alt={product.name} 
-                style={{ width: '100%', maxHeight: '500px', objectFit: 'cover', borderRadius: 'var(--radius-sm)' }} 
+                style={{ width: '100%', maxHeight: '400px', objectFit: 'cover', borderRadius: 'var(--radius-sm)' }} 
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80';
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80';
                 }}
               />
             </div>
@@ -66,27 +66,27 @@ export default function ProductDetailPage() {
 
           {/* Details Column */}
           <div>
-            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.75rem' }}>
               <span className="badge">{product.category}</span>
               {product.customizable && <span className="badge" style={{ backgroundColor: 'var(--ice-blue)' }}>Customizable</span>}
             </div>
             
-            <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', lineHeight: 1.1 }}>{product.name}</h1>
+            <h1 style={{ fontSize: 'clamp(1.8rem, 2.8vw, 2.4rem)', marginBottom: '0.75rem', lineHeight: 1.15 }}>{product.name}</h1>
             
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-              <strong style={{ fontSize: '2rem', color: 'var(--navy)' }}>{formatCurrency(product.price)}</strong>
-              <div className="product-rating" style={{ fontSize: '1rem' }}>
-                <Star size={18} fill="currentColor" />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
+              <strong style={{ fontSize: '1.6rem', color: 'var(--navy)' }}>{formatCurrency(product.price)}</strong>
+              <div className="product-rating" style={{ fontSize: '0.95rem' }}>
+                <Star size={16} fill="currentColor" />
                 <span>{product.rating} (Review Score)</span>
               </div>
             </div>
 
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.6, marginBottom: '2rem' }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.55, marginBottom: '1.5rem' }}>
               {product.description}
             </p>
 
             {/* Selection Options */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '2rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.15rem', marginBottom: '1.5rem' }}>
               <div>
                 <h4 style={{ fontSize: '0.9rem', marginBottom: '0.75rem' }}>Select Size</h4>
                 <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
@@ -168,7 +168,7 @@ export default function ProductDetailPage() {
         </div>
 
         {/* Related Section */}
-        <div style={{ marginTop: '6rem' }}>
+        <div style={{ marginTop: '3.5rem' }}>
           <div className="section-header">
             <span className="eyebrow">COMPLETE THE FIT</span>
             <h2>RELATED ESSENTIALS</h2>

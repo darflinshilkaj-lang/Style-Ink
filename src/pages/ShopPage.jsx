@@ -42,8 +42,8 @@ export default function ShopPage() {
         </div>
 
         {/* Filters Panel */}
-        <div className="card" style={{ padding: '2rem', marginBottom: '3rem' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', marginBottom: '1.5rem', alignItems: 'center' }}>
+        <div className="card" style={{ padding: '1.25rem 1.5rem', marginBottom: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 2fr) minmax(0, 1fr)', gap: '1rem', marginBottom: '1rem', alignItems: 'center' }}>
             <input 
               className="input" 
               placeholder="Search fits..." 

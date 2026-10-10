@@ -109,7 +109,7 @@ export default function HomePage() {
           <div className="customization-visual">
             <div className="custom-preview">
               <img 
-                src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80" 
                 alt="Style Ink customized preview T-Shirt mockup" 
               />
             </div>
@@ -150,7 +150,7 @@ export default function HomePage() {
       {/* 5. WHY CHOOSE STYLE INK */}
       <section className="section section-bg-ice">
         <div className="container">
-          <div className="section-header" style={{ textAlign: 'center', margin: '0 auto 4rem' }}>
+          <div className="section-header" style={{ textAlign: 'center', margin: '0 auto 2rem' }}>
             <span className="eyebrow">THE STANDARD</span>
             <h2>WHY CHOOSE STYLE INK</h2>
           </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
           <div className="community-info">
             <span className="eyebrow">WEAR & SHARE</span>
             <h2>STYLE INK COMMUNITY</h2>
-            <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', fontSize: '1.1rem' }}>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1.25rem', fontSize: '1rem' }}>
               Tag <strong style={{ color: 'var(--navy)' }}>#STYLEINK</strong> on your fits to get featured in our editorial mood board. Join a community built around modern styling.
             </p>
             <a href="https://instagram.com" target="_blank" rel="noreferrer" className="btn btn-outline">
@@ -199,7 +199,7 @@ export default function HomePage() {
       </section>
 
       {/* 7. NEWSLETTER */}
-      <section className="section" style={{ paddingBottom: '7rem' }}>
+      <section className="section" style={{ paddingBottom: '3rem' }}>
         <div className="container">
           <div className="newsletter-shell">
             <div>

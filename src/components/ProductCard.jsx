@@ -32,7 +32,7 @@ export default function ProductCard({ product, showNew = false }) {
             loading="lazy"
             onError={(e) => {
               e.currentTarget.onerror = null;
-              e.currentTarget.src = 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80';
+              e.currentTarget.src = 'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80';
             }}
           />
         </Link>

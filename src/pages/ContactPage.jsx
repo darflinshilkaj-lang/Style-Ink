@@ -14,29 +14,29 @@ export default function ContactPage() {
   return (
     <section className="section">
       <div className="container">
-        <div className="section-header" style={{ textAlign: 'center', margin: '0 auto 4rem' }}>
+        <div className="section-header" style={{ textAlign: 'center', margin: '0 auto 2.5rem' }}>
           <span className="eyebrow">GET IN TOUCH</span>
           <h1>CONTACT US</h1>
         </div>
 
-        <div className="grid-2" style={{ gap: '4rem', alignItems: 'start' }}>
+        <div className="grid-2" style={{ gap: '2.5rem', alignItems: 'start' }}>
           {/* Contact Info */}
           <div>
-            <h2 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', lineHeight: 1.2 }}>
+            <h2 style={{ fontSize: '1.6rem', marginBottom: '1rem', lineHeight: 1.2 }}>
               LET'S TALK STYLE, ORDERS, AND EVERYTHING IN BETWEEN.
             </h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '3rem' }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '2rem' }}>
               We're available for support queries, customization discussions, wholesale opportunities, or just to hear what you think about our product line.
             </p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}>
                 <div className="feature-icon" style={{ flexShrink: 0 }}>
                   <Mail size={20} />
                 </div>
                 <div>
                   <h4 style={{ marginBottom: '0.25rem' }}>EMAIL</h4>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>hello@styleink.com</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>contact@styleink.com</p>
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>orders@styleink.com</p>
                 </div>
               </div>
@@ -47,8 +47,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 style={{ marginBottom: '0.25rem' }}>PHONE</h4>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>+1 (800) 555-0142</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Mon–Fri, 9AM–6PM EST</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>9489659269</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Mon–Fri, 9AM–6PM </p>
                 </div>
               </div>
 
@@ -58,8 +58,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 style={{ marginBottom: '0.25rem' }}>STUDIO</h4>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>12 Harbor Avenue, Suite 300</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>New York, NY 10001</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>12 Harbor Avenue, KSR Kalvi Nagar</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Erode, TN 600001</p>
                 </div>
               </div>
             </div>

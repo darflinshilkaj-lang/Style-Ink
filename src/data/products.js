@@ -13,7 +13,7 @@ export const products = [
     category: 'Oversized T-Shirts',
     price: 799,
     rating: 4.8,
-    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80',
     description: 'A premium cotton tee crafted for everyday comfort and an oversized streetwear silhouette.',
     colors: ['Navy Blue', 'White', 'Black'],
     sizes: ['S', 'M', 'L', 'XL'],

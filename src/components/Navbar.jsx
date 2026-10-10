@@ -65,7 +65,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div style={{
           position: 'fixed',
-          top: '80px',
+          top: '64px',
           left: 0,
           right: 0,
           bottom: 0,
